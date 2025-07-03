@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venkatesh Annabathina - Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111111;
+            color: #E2E8F0; /* slate-200 */
+        }
+        /* Glassmorphism effect for cards */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        /* Subtle glow effect on hover */
+        .glow-hover:hover {
+            box-shadow: 0 0 15px rgba(79, 70, 229, 0.4), 0 0 5px rgba(79, 70, 229, 0.2);
+        }
+        /* Scroll reveal animation */
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .scroll-reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-wider text-white">VA</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#about" class="text-slate-300 hover:text-white transition-colors duration-300">About</a>
+                <a href="#skills" class="text-slate-300 hover:text-white transition-colors duration-300">Skills</a>
+                <a href="#projects" class="text-slate-300 hover:text-white transition-colors duration-300">Projects</a>
+                <a href="#interests" class="text-slate-300 hover:text-white transition-colors duration-300">Interests</a>
+            </nav>
+            <a href="#contact" class="hidden md:block bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-500 transition-all duration-300">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="min-h-screen flex items-center justify-center text-center bg-grid-slate-800/[0.2]">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto">
+                    <img 
+  src="myphoto.jpg" 
+  alt="Venkatesh Annabathina" 
+  class="w-40 h-40 md:w-48 md:h-48 rounded-full mx-auto mb-8 border-4 border-slate-700 shadow-2xl object-cover"
+  onerror="this.onerror=null; this.src='https://placehold.co/192x192/111111/E2E8F0?text=VA';">
+                        Venkatesh Annabathina
+                    </h1>
+                    <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto">
+                        Computer Science Student exploring the intersection of AI, Game Development, and Human Consciousness.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 md:py-32 scroll-reveal">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">About Me</h2>
+                    <div class="w-20 h-1 bg-indigo-500 mx-auto mt-4"></div>
+                </div>
+                <div class="max-w-3xl mx-auto text-center text-slate-300 text-lg leading-relaxed">
+                    <p class="mb-6">
+                        I'm a second-year B.Tech Computer Science student with a deep curiosity for how technology can extend human capabilities. My journey is driven by a passion for building things, whether it's through code, creative doodling, or hands-on projects.
+                    </p>
+                    <p>
+                        When I'm not programming or studying, you can find me at the gym, sketching ideas, or diving into new personal projects just for the fun of discovery.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20 md:py-32 bg-slate-900/[0.2] scroll-reveal">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">My Toolkit</h2>
+                    <p class="text-slate-400 mt-2">Technologies I work with.</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 max-w-5xl mx-auto">
+                    <!-- Skill Card -->
+                    <div class="glass-card p-6 rounded-xl flex flex-col items-center text-center glow-hover transition-all duration-300">
+                        <img src="https://www.vectorlogo.zone/logos/python/python-icon.svg" class="w-16 h-16 mb-4" alt="Python">
+                        <h3 class="font-semibold text-white">Python</h3>
+                    </div>
+                    <!-- Skill Card -->
+                    <div class="glass-card p-6 rounded-xl flex flex-col items-center text-center glow-hover transition-all duration-300">
+                        <img src="https://www.vectorlogo.zone/logos/gcc/gcc-icon.svg" class="w-16 h-16 mb-4" alt="C Programming">
+                        <h3 class="font-semibold text-white">C Programming</h3>
+                    </div>
+                    <!-- Skill Card -->
+                    <div class="glass-card p-6 rounded-xl flex flex-col items-center text-center glow-hover transition-all duration-300">
+                         <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg" class="w-16 h-16 mb-4" alt="HTML5">
+                        <h3 class="font-semibold text-white">HTML, CSS, JS</h3>
+                        <p class="text-xs text-slate-400">(Familiar)</p>
+                    </div>
+                    <!-- Skill Card -->
+                    <div class="glass-card p-6 rounded-xl flex flex-col items-center text-center glow-hover transition-all duration-300">
+                        <img src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg" class="w-16 h-16 mb-4" alt="Unity">
+                        <h3 class="font-semibold text-white">Unity</h3>
+                    </div>
+                    <!-- Skill Card -->
+                    <div class="glass-card p-6 rounded-xl flex flex-col items-center text-center glow-hover transition-all duration-300">
+                        <img src="https://www.vectorlogo.zone/logos/csharp/csharp-icon.svg" class="w-16 h-16 mb-4" alt="C#">
+                        <h3 class="font-semibold text-white">C#</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 md:py-32 scroll-reveal">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">Projects</h2>
+                    <p class="text-slate-400 mt-2">Creations from my journey so far.</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                    <!-- Project Card -->
+                    <div class="glass-card rounded-xl overflow-hidden group">
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold text-white mb-2">3D Interface AI</h3>
+                            <p class="text-slate-400 mb-6">An exploration into creating intuitive, three-dimensional user interfaces powered by artificial intelligence. The goal is to make human-computer interaction more natural and immersive.</p>
+                            <a href="#" class="inline-block text-indigo-400 font-semibold group-hover:text-indigo-300 transition-colors duration-300">View Details &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Project Card -->
+                    <div class="glass-card rounded-xl overflow-hidden group">
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold text-white mb-2">Personal Portfolio</h3>
+                            <p class="text-slate-400 mb-6">A responsive and aesthetically-pleasing personal website built with HTML and Tailwind CSS to showcase my skills, projects, and journey as a developer. You're looking at it right now!</p>
+                            <a href="https://github.com/venkateshannabathina" target="_blank" rel="noopener noreferrer" class="inline-block text-indigo-400 font-semibold group-hover:text-indigo-300 transition-colors duration-300">View Source Code &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interests Section -->
+        <section id="interests" class="py-20 md:py-32 bg-slate-900/[0.2] scroll-reveal">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">Intellectual Interests</h2>
+                    <p class="text-slate-400 mt-2">The big questions that fuel my curiosity.</p>
+                </div>
+                <div class="max-w-4xl mx-auto space-y-8">
+                    <!-- Interest Item -->
+                    <div class="glass-card p-6 rounded-lg">
+                        <h3 class="font-bold text-xl text-white">Consciousness of the Human Mind</h3>
+                        <p class="text-slate-400 mt-1">Exploring the nature of consciousness, self-awareness, and how these complex phenomena arise from biological processes.</p>
+                    </div>
+                    <!-- Interest Item -->
+                    <div class="glass-card p-6 rounded-lg">
+                        <h3 class="font-bold text-xl text-white">Full Capability of Artificial Intelligence</h3>
+                        <p class="text-slate-400 mt-1">Investigating the theoretical limits and future potential of AI, from artificial general intelligence (AGI) to superintelligence.</p>
+                    </div>
+                     <!-- Interest Item -->
+                    <div class="glass-card p-6 rounded-lg">
+                        <h3 class="font-bold text-xl text-white">Robotics & Neuroscience</h3>
+                        <p class="text-slate-400 mt-1">Fascinated by the synergy between creating intelligent machines and understanding the neural mechanisms that govern our own bodies and minds.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="py-16 bg-black">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-white mb-4">Get In Touch</h2>
+            <p class="text-slate-400 mb-8 max-w-lg mx-auto">I'm always open to discussing new projects, creative ideas, or opportunities. Feel free to reach out via email or connect with me below.</p>
+            
+            <!-- Contact Info -->
+            <div class="flex flex-col items-center justify-center space-y-2 mb-10">
+                 <a href="mailto:venkateshannbathina96@gmail.com" class="text-lg text-indigo-400 hover:text-indigo-300 transition-colors duration-300">
+                    venkateshannbathina96@gmail.com
+                 </a>
+                 <a href="tel:+917207474421" class="text-lg text-indigo-400 hover:text-indigo-300 transition-colors duration-300">
+                    +91 72074 74421
+                 </a>
+            </div>
+
+            <div class="flex justify-center space-x-6">
+                <!-- Social Links -->
+                <a href="https://github.com/venkateshannabathina" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors duration-300">GitHub</a>
+                <a href="https://www.linkedin.com/in/venkatesh-annabathina-893066323/" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors duration-300">LinkedIn</a>
+            </div>
+            <p class="text-slate-500 text-sm mt-12">&copy; 2024 Venkatesh Annabathina. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for scroll animations and navbar background
+        document.addEventListener('DOMContentLoaded', () => {
+            const navbar = document.getElementById('navbar');
+            const revealElements = document.querySelectorAll('.scroll-reveal');
+
+            // Navbar background on scroll
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('bg-black/50', 'backdrop-blur-lg');
+                } else {
+                    navbar.classList.remove('bg-black/50', 'backdrop-blur-lg');
+                }
+            });
+
+            // Intersection Observer for scroll animations
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            revealElements.forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
